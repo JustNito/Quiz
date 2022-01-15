@@ -77,5 +77,6 @@ class GameViewModel (private val getQuestionsUseCase: GetQuestionsUseCase) : Vie
         viewModelScope.launch {
             listOfQuestions = getQuestionsUseCase.execute()
         }
+        _numOfCorrectAnswers.value = 0
     }
 }
