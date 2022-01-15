@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Quiz</string>
+    <string name="start_button">Начать</string>
+    <string name="skip">Пропустить</string>
+    <string name="submit">Ответить</string>
+    <string name="enter_your_word">Ответ</string>
+    <string name="final_score_text">Вы набрали: %d очков</string>
+    <string name="final_score_text2">очков</string>
+    <string name="restart_button_text">Сыграть ещё раз</string>
+    <string name="score">Очков: %d</string>
+    <string name="question_counter">Вопрос %d из %d</string>
+    <string name="try_again">Неправильно!</string>
+</resources>
