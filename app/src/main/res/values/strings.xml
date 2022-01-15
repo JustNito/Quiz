@@ -9,5 +9,6 @@
     <string name="restart_button_text">Сыграть ещё раз</string>
     <string name="score">Очков: %d</string>
     <string name="question_counter">Вопрос %d из %d</string>
+    <string name="num_of_correct_answers">Кол-во правильных ответов: %d из %d</string>
     <string name="try_again">Неправильно!</string>
 </resources>

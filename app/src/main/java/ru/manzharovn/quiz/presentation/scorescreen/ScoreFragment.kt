@@ -10,6 +10,7 @@ import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModel
 import androidx.navigation.fragment.findNavController
+import ru.manzharovn.domain.MAX_NUM_OF_QUESTIONS
 import ru.manzharovn.quiz.MainActivity
 import ru.manzharovn.quiz.R
 import ru.manzharovn.quiz.databinding.FragmentScoreBinding
@@ -47,6 +48,7 @@ class ScoreFragment: Fragment() {
         binding?.apply {
             lifecycleOwner = viewLifecycleOwner
             viewModel = gameViewModel
+            maxNumOfWords = MAX_NUM_OF_QUESTIONS
             restartButton.setOnClickListener{
                 findNavController().navigate(R.id.action_scoreFragment_to_startFragment)
             }

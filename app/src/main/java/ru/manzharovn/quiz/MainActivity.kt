@@ -24,14 +24,9 @@ class MainActivity : AppCompatActivity() {
         val navHostFragment = supportFragmentManager
             .findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         navContrloller = navHostFragment.navController
-        //setupActionBarWithNavController(navContrloller)
     }
 
     override fun onBackPressed() {
     }
 
-
-//    override fun onSupportNavigateUp(): Boolean {
-//        return navContrloller.navigateUp() || super.onSupportNavigateUp()
-//    }
 }

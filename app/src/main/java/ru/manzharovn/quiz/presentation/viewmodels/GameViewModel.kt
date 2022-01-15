@@ -19,6 +19,10 @@ class GameViewModel (private val getQuestionsUseCase: GetQuestionsUseCase) : Vie
 
     private lateinit var answer: String
 
+    private val _numOfCorrectAnswers = MutableLiveData(0)
+    val numOfCorrectAnswers: LiveData<Int>
+        get() = _numOfCorrectAnswers
+
     private val _score = MutableLiveData(0)
     val score: LiveData<Int>
         get() = _score
@@ -47,6 +51,7 @@ class GameViewModel (private val getQuestionsUseCase: GetQuestionsUseCase) : Vie
 
     fun isAnswerCorrect(playerAnswer: String): Boolean {
         return if(playerAnswer.equals(answer, true)){
+            _numOfCorrectAnswers.value = _numOfCorrectAnswers.value?.inc()
             increaseScore()
             true
         } else {
